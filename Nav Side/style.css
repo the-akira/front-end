@@ -1,207 +1,212 @@
 html,
 body {
-  font-family: 'Droid Serif';
-  color: #343434;
-  font-size: 1.1em;
-  line-height: 1.6;
-  overflow-x: hidden;
+    font-family: 'Droid Serif';
+    color: #343434;
+    font-size: 1.1em;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
 header {
-  border-bottom: 1px solid #cdcdcd;
-  padding: 40px 0;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 40px 0;
 }
 
 .container {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 h1 {
-  font-size: 1em;
-  text-align: center;
-  margin: 0;
-  line-height: 0;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    line-height: 0;
 }
 
 @media screen and (min-width: 900px) {
-  h1 {
-    font-size: 1.4em;
-    text-align: left;
-  }
+    h1 {
+        font-size: 1.4em;
+        text-align: left;
+    }
 }
 
 h1 span {
-  display: none;
+    display: none;
 }
 
 @media screen and (min-width: 900px) {
-  h1 span {
-    display: inline;
-    font-size: .6em;
-    color: #898989;
-  }
+    h1 span {
+        display: inline;
+        font-size: .6em;
+        color: #898989;
+    }
 }
 
 article {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin: 1em 0 0;
+    font-size: 1.5em;
+    margin: 1em 0 0;
 }
 
 dt {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 time {
-  font-size: .9em;
-  color: #898989;
-  display: block;
+    font-size: .9em;
+    color: #898989;
+    display: block;
 }
+
 /* Nav icon positioning */
 
 .position {
-  position: absolute;
-  top: 28px;
-  left: 20px;
-  transition: all .3s ease;
-  z-index: 2;
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    transition: all .3s ease;
+    z-index: 2;
 }
 
 @media screen and (min-width: 900px) {
-  .position {
-    position: fixed;
-  }
+    .position {
+        position: fixed;
+    }
 }
+
 /* Elijah Manor Nav button */
 
 #nav-toggle {
-  cursor: pointer;
-  padding: 10px 35px 16px 0px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
 }
 
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: #343434;
-  position: absolute;
-  display: block;
-  content: '';
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #343434;
+    position: absolute;
+    display: block;
+    content: '';
 }
 
 #nav-toggle span:before {
-  top: -10px;
+    top: -10px;
 }
 
 #nav-toggle span:after {
-  bottom: -10px;
+    bottom: -10px;
 }
 
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
-  transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 #nav-toggle.active span {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 #nav-toggle.active span:before,
 #nav-toggle.active span:after {
-  top: 0;
+    top: 0;
 }
 
 #nav-toggle.active span:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 #nav-toggle.active span:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
+
 /* Off Canvas Navigation */
 
 main {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  transition: .3s ease all;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: .3s ease all;
 }
 
 aside {
-  width: 250px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: -250px;
-  background: #343434;
-  font-size: .8em;
-  font-family: sans-serif;
-  font-weight: 300;
-  transition: all .3s ease;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: #343434;
+    font-size: .8em;
+    font-family: sans-serif;
+    font-weight: 300;
+    transition: all .3s ease;
 }
 
 aside p {
-  color: #cdcdcd;
-  padding: 20px;
+    color: #cdcdcd;
+    padding: 20px;
 }
 
 aside nav ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 aside nav ul li:first-of-type {
-  border-top: 1px solid #565656;
+    border-top: 1px solid #565656;
 }
 
 aside nav ul li {
-  border-bottom: 1px solid #565656;
+    border-bottom: 1px solid #565656;
 }
 
 aside nav ul li a {
-  padding: 10px 20px;
-  display: block;
-  color: #fff;
-  text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
 }
 
 aside nav ul li a:hover {
-  background: #454545;
+    background: #454545;
 }
+
 /* JavaScript toggle */
 
 .show-nav aside,
 .show-nav .position,
 .show-nav main {
-  -webkit-transform: translateX(250px);
-          transform: translateX(250px);
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
 }
+
 .show-nav .position {
-  position: fixed;
+    position: fixed;
 }
 
 .show-nav article {
-  padding: 0 80px;
+    padding: 0 80px;
 }
 
 a {
-  text-decoration: none;
-  color: #6699cc;
+    text-decoration: none;
+    color: #6699cc;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }

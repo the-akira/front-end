@@ -1,27 +1,26 @@
 <script type="text/javascript">
-	let i = 0; 
-	let images = [];
-	let time = 3000;
+let i = 0;
+let images = [];
+let time = 3000;
 
-	// Image List
-	images[0] = '1.jpg';
-	images[1] = '2.jpg';
-	images[2] = '3.png';
+// Image List
+images[0] = '1.jpg';
+images[1] = '2.jpg';
+images[2] = '3.png';
 
-	// Change image
-	function changeImg(){
-		document.slide.src = images[i];
+// Change image
+function changeImg() {
+    document.slide.src = images[i];
 
-		if(i < images.length - 1){
-			i++;
-		} else {
-			i = 0;
-		}
+    if (i < images.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
 
-		setTimeout("changeImg()", time)
-	}
+    setTimeout("changeImg()", time)
+}
 
-	window.onload = changeImg;
+window.onload = changeImg;
 </script>
-
 <img name="slide" width="700" height="430">

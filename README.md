@@ -1,6 +1,6 @@
 # Front-End
 
-Small front-end projects, layouts, navigation bars, menus, forms, etc
+Small front-end experiments: layouts, navigation bars, menus, forms, etc.
 
 You just have to clone the repository:
 
